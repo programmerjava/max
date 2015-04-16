@@ -13,6 +13,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+
 /**
  * Отражает комментарий к предложению подрядчика 
  * оставленный либо самим подрядчиком, либо заказчиком.
@@ -36,6 +39,7 @@ public class Comment {
 	private User user;
 
 	@Column(nullable=false)
+	@JsonIgnore
 	private LocalDateTime time;
 
 	
@@ -83,6 +87,11 @@ public class Comment {
 	 */
 	public LocalDateTime getTime() {
 		return time;
+	}
+	
+	@JsonProperty("time")
+	public String getTimeInString() {
+		return time.toString();
 	}
 
 	/**

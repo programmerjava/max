@@ -1,13 +1,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>gg</groupId>
-  <artifactId>tenders</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>tenders Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gg</groupId>
+	<artifactId>tenders</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>tenders Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.1.6.RELEASE</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.8.0.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.1.6.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -61,10 +90,10 @@
 		</dependency>
 
 	</dependencies>
-    
 
-  
-  <build>
+
+
+	<build>
 		<finalName>tenders</finalName>
 
 		<pluginManagement>
@@ -80,7 +109,7 @@
 						<generateReports>false</generateReports>
 					</configuration>
 				</plugin>
-				
+
 			</plugins>
 
 		</pluginManagement>

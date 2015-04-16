@@ -368,6 +368,13 @@ public class Purchase {
 	public void setWinner(User winner) {
 		this.winner = winner;
 	}
+
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
 	
 	
 	

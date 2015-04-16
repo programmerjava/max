@@ -4,9 +4,12 @@ import java.math.BigDecimal;
 import java.time.Period;
 import java.util.List;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -15,12 +18,16 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OrderColumn;
+import javax.persistence.Table;
 
 /**
  * Предложение подрядчика.
  * @author GG
  *
  */
+@Entity
+@Table(name="offers")
+@Access(AccessType.FIELD)
 public class Offer {
 	
 	
@@ -220,6 +227,10 @@ public class Offer {
 
 	public Integer getId() {
 		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
 	

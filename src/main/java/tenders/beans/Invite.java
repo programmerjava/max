@@ -41,9 +41,7 @@ public class Invite {
 	@Column(nullable=false)
 	private String companyName;
 	
-	
-	private Date date;
-	
+
 	@ManyToOne
 	@JoinColumn(name="purchaseId", nullable = false)
 	private Purchase purchase;
@@ -98,20 +96,6 @@ public class Invite {
 		this.companyName = companyName;
 	}
 
-
-	/**
-	 * Получить дату.
-	 */
-	public Date getDate() {
-		return date;
-	}
-
-	/**
-	 * Установить дату.
-	 */
-	public void setDate(Date date) {
-		this.date = date;
-	}
 
 	/**
 	 * Закупка, на которую компания приглашается.
