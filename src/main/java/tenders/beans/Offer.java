@@ -8,6 +8,7 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -62,6 +63,7 @@ public class Offer {
 	private String uniqText;
 	
 	
+	@ElementCollection
 	@CollectionTable(name="offer_files")
 	@OrderColumn(name="position")
 	private List<String> files;

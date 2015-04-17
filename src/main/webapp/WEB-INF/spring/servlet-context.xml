@@ -20,10 +20,11 @@
 		in the /WEB-INF/views directory -->
 	<beans:bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="prefix" value="/WEB-INF/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-
+	
+	<view-controller path="/index" view-name="index"/>
 
 	<!-- Configure to plugin JSON as request and response in method handler -->
 	<beans:bean

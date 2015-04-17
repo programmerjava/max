@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Embeddable;
 import javax.persistence.Index;
 import javax.persistence.OrderColumn;
@@ -24,6 +25,7 @@ public class ContactInfo {
 	private String company;
 	
 
+	@ElementCollection
 	@CollectionTable(name="phones")
 	private List<String> phones;
 	

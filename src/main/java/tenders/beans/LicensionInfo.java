@@ -1,6 +1,8 @@
 package tenders.beans;
 
-import java.sql.Date;
+
+
+import java.util.Date;
 
 import javax.persistence.Embeddable;
 import javax.persistence.Temporal;

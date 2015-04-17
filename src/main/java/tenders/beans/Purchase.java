@@ -1,9 +1,9 @@
 package tenders.beans;
 
 import java.math.BigDecimal;
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Access;
@@ -19,6 +19,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.OrderColumn;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -103,7 +104,7 @@ public class Purchase {
 	private PurchaseState state;
 	
 
-	@OneToMany
+	@OneToOne
 	@JoinColumn(name="winnerId",nullable=false)
 	private User winner;
 
