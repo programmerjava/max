@@ -22,7 +22,7 @@ import javax.persistence.OrderColumn;
 import javax.persistence.Table;
 
 /**
- * Предложение подрядчика.
+ * РћС„С„РµСЂ.
  * @author GG
  *
  */
@@ -81,14 +81,14 @@ public class Offer {
 	
 	
 	/**
-	 * Закупка, к которой выставлено предложение.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public Purchase getPurchase() {
 		return purchase;
 	}
 
 	/**
-	 * Закупка, к которой выставлено предложение.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setPurchase(Purchase purchase) {
 		this.purchase = purchase;
@@ -96,14 +96,14 @@ public class Offer {
 
 
 	/**
-	 * Подрядчик.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public User getContractor() {
 		return contractor;
 	}
 
 	/**
-	 * Подрядчик.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setContractor(User contractor) {
 		this.contractor = contractor;
@@ -111,28 +111,28 @@ public class Offer {
 
 
 	/**
-	 * Период выполнения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public Period getPeriod() {
 		return period;
 	}
 
 	/**
-	 * Период выполнения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setPeriod(Period period) {
 		this.period = period;
 	}
 
 	/**
-	 * Цена выполнения.
+	 * пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public BigDecimal getPrice() {
 		return price;
 	}
 
 	/**
-	 * Цена выполнения.
+	 * пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setPrice(BigDecimal price) {
 		this.price = price;
@@ -140,14 +140,14 @@ public class Offer {
 
 
 	/**
-	 * Заголовок предложения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public String getTitle() {
 		return title;
 	}
 
 	/**
-	 * Заголовок предложения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setTitle(String title) {
 		this.title = title;
@@ -155,42 +155,42 @@ public class Offer {
 
 
 	/**
-	 * Текст предложения.
+	 * пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public String getText() {
 		return text;
 	}
 
 	/**
-	 * Текст предложения.
+	 * пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setText(String text) {
 		this.text = text;
 	}
 
 	/**
-	 * Текст уникального предложения.
+	 * пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public String getUniqText() {
 		return uniqText;
 	}
 
 	/**
-	 * Текст уникального предложения.
+	 * пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setUniqText(String uniqText) {
 		this.uniqText = uniqText;
 	}
 
 	/**
-	 * Список прикрепленных файлов предложения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public List<String> getFiles() {
 		return files;
 	}
 
 	/**
-	 * Список прикрепленных файлов предложения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setFiles(List<String> files) {
 		this.files = files;
@@ -198,14 +198,14 @@ public class Offer {
 
 
 	/**
-	 * Состояние предложения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public OfferState getState() {
 		return state;
 	}
 
 	/**
-	 * Состояние предложения.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setState(OfferState state) {
 		this.state = state;
@@ -213,14 +213,14 @@ public class Offer {
 
 
 	/**
-	 * Настройки оповещения подрядчика.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public OfferNotificationSettings getNotifications() {
 		return notifications;
 	}
 
 	/**
-	 * Настройки оповещения подрядчика.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	public void setNotifications(OfferNotificationSettings notifications) {
 		this.notifications = notifications;

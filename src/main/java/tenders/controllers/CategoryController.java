@@ -31,21 +31,14 @@ public class CategoryController {
 	
 	
 	
-	@RequestMapping("/list")
+	@RequestMapping("/categories")
 	@ResponseBody
-	public String get() 
-			throws JsonGenerationException, JsonMappingException, IOException {
-		
-		List<Category> list = new LinkedList<>();
-		for(Category cat :repository.findAll())
-			list.add(cat);
-		return new ObjectMapper().writeValueAsString(list);
-	}
-	
-	@RequestMapping("/add")
-	@ResponseStatus(value=HttpStatus.OK)
-	public void add(@RequestBody Category category) {
-		repository.save(category);
+	public List<Category> get() {
+		LinkedList<Category> categories = new LinkedList<Category>();
+		for(Category c : repository.findAll()) {
+			categories.add(c);
+		}
+		return categories;
 	}
 	
 	

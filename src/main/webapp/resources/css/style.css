@@ -750,22 +750,27 @@ input.tender_title:-ms-input-placeholder {font-size: 24px;}
     width: 366px;
     font-size: 24px;
 }
-.company .reviewStars {
+.company .reviewStars,
+.company_info .reviewStars {
     clear: both;
     float: left;
     width: 105px;
     margin: 0 20px 5px 0;
 }
 .company .reviewStars input:checked ~ label, 
-.company .reviewStars label {
+.company .reviewStars label,
+.company_info .reviewStars input:checked ~ label,
+.company_info .reviewStars label {
     background: url(../images/star2_ico.png) no-repeat;
 }
-.company .reviewStars input:checked ~ label {
+.company .reviewStars input:checked ~ label,
+.company_info .reviewStars input:checked ~ label {
     background-position: 0 -22px;
     height: 20px;
     width: 18px;
 }
-.company .reviewStars label {
+.company .reviewStars label,
+.company_info .reviewStars label {
     height: 20px;
     width: 18px;
     float: right;
@@ -1230,25 +1235,34 @@ ul.footer_ul_last {
 .review_box>div:not(.reviewStars):hover {
     color: #dd2828;
 }
-.review_box .reviewStars {
+.review_box .reviewStars,
+.total_stars .reviewStars {
     margin: 0 13px 0 16px;
 }
-.reviewStars input {
+.reviewStars input,
+.total_stars .reviewStars input{
     position: absolute;
     left: -99999px;
 }
 .review_box .reviewStars input:checked ~ label, 
 .review_box .reviewStars label, 
 .review_box .reviewStars label:hover, 
-.review_box .reviewStars label:hover ~ label {
+.review_box .reviewStars label:hover ~ label,
+
+.company_info .total_stars .reviewStars input:checked ~ label, 
+.company_info .total_stars .reviewStars label, 
+.company_info .total_stars .reviewStars label:hover, 
+.company_info .total_stars .reviewStars label:hover ~ label, {
     background: url(../images/star_ico.png) no-repeat;
 }
-.review_box .reviewStars input:checked ~ label {
+.review_box .reviewStars input:checked ~ label,
+.total_stars .reviewStars input:checked ~ label {
     background-position: 0 -27px;
     height: 25px;
     width: 27px;
 }
-.review_box .reviewStars label {
+.review_box .reviewStars label,
+.total_stars .reviewStars label {
     height: 25px;
     width: 27px;
     float: right;
@@ -1256,7 +1270,9 @@ ul.footer_ul_last {
     margin-right: 3px;
 }
 .review_box .reviewStars label:hover, 
-.review_box .reviewStars label:hover ~ label {
+.review_box .reviewStars label:hover ~ label,
+.total_stars .reviewStars label:hover, 
+.total_stars .reviewStars label:hover ~ label {
     background-position: 0 -27px;
     height: 25px;
     width: 27px;
@@ -1807,7 +1823,8 @@ body .company.details_info .right_info>div a{
     margin: 25px auto;
 }
 .registration fieldset legend,
-.profile h2{
+.profile h2,
+.company_info h2{
     font-size: 24px;
     color: #666;
     padding: 35px 30px 10px;
@@ -1815,6 +1832,26 @@ body .company.details_info .right_info>div a{
     display: block;
     width: 100%;
     box-sizing: border-box;
+}
+.profile .actual_tender h2,
+.profile .company_info h2{
+    color: #666;
+}
+.company_info .information{
+    width: 500px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.company_info .information li{
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.company_info .information+img{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 .registration .row{
     padding: 0 70px;
@@ -1890,8 +1927,8 @@ aside ul a{
     display: block;
     padding-left: 20px;
 }
-aside ul ul li{
-    padding-left: 20px;
+aside ul ul li a{
+    padding-left: 40px;
 }
 aside ul>li.select>a{
     border-left:8px solid #dd2929;
@@ -1903,7 +1940,16 @@ aside+section{
     width: 700px;
     float: left;
 }
-.profile h2{
+aside .disabl a{
+    color: #bfbfbf;
+}
+aside .info_button{
+    width: 100%;
+    cursor: pointer;
+}
+.profile h2,
+.title_gray,
+.company_info h2{
     font-weight: normal;
     padding-top:0;
     padding-bottom: 0;
@@ -1959,7 +2005,8 @@ aside+section{
     padding-bottom: 0;
     float: right;
 }
-.right_profile .upload{
+.right_profile .upload,
+.add_work .upload{
     color: #858585;
     background: url(../images/load.png) right center no-repeat, url(../images/dotted_line4.png) 0 19px repeat-x;
     padding-right: 20px;
@@ -1973,4 +2020,399 @@ aside+section{
     font-size: 16px;
     line-height: 47px;
     color: #555;
+}
+.password .title{
+    font-weight: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    line-height: 58px;
+    font-size: 24px;
+}
+.password input[type="password"],
+.add_work input[type="text"]{
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    height: 24px;
+    background: url(../images/dotted-black.png) left bottom repeat-x transparent;
+
+}
+.password  .row,
+.add_work .row{
+    margin-bottom: 15px;
+}
+.password .new input[type="password"],
+.add_work .green input[type="text"]{
+    border-bottom: 1px solid #64dd16;
+    color: #64dd16;
+    background: transparent;
+}
+.password label,
+.add_work label{
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    font-size: 16px;
+    width: 120px;
+    padding-left: 20px;
+}
+.password .new label,
+.add_work .green label{
+    color: #64dd16;
+}
+body .text_gray{
+    color:#666;
+}
+.btn-green{
+    display: block;
+    width: 240px;
+    line-height: 40px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #64dd17;
+    border: 0;
+    color: #fff;
+    outline: none;
+}
+.password .btn-green{
+    width: 150px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-left: 195px;
+    line-height: 35px;
+}
+.category .title{
+    font-size: 21px;
+    color: #666;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+}
+.category .search_style{
+    padding-left: 20px;
+}
+.category .add_category{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.profile .gallery,
+.company_info .gallery{
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.profile .gallery .item,
+.company_info .gallery .item{
+    width: 220px;
+    float: left;
+    height: 160px;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.profile .gallery .item>div,
+.company_info .gallery .item>div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    height: 40px;
+    overflow: hidden;
+}
+.profile .gallery .item .title,
+.company_info .gallery .item .title{
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.profile .gallery .item .anons,
+.company_info .gallery .item .anons{
+    color: #c2c2c2;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.profile .gallery .item a,
+.company_info .gallery .item a{
+    display: block;
+    border: 2px solid #969494;
+    width: 178px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto
+}
+.profile .gallery .item:hover>div,
+.company_info .gallery .item:hover>div{
+    height: 100%;
+}
+.profile .gallery .item:nth-child(3n),
+.company_info .gallery .item:nth-child(4n){
+    margin-right: 0;
+    float: right;
+}
+.profile .gallery .item img,
+.company_info .gallery .item img{
+    width: 100%;
+    height: 100%;
+}
+.gallery+ .title_gray{
+    color: #666;
+    font-size: 24px;
+    line-height: 32px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.add_work{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.add_work input{
+    width: 300px;
+}
+.add_work .left_block{
+    float: left;
+    width: 450px;
+}
+.add_work .right_block{
+    width: 220px;
+    float: right;
+}
+.add_work .btn-green{
+    width: 150px;
+    float: right;
+    margin-right: 20px;
+}
+.setting_message .checked{
+    padding-left: 80px;
+    margin-top: 15px;
+}
+.setting_message .checked input:checked+label{
+    color: #000;
+    background-image: url(../images/box-cheked.png);
+}
+.setting_message{
+    height: 230px;
+}
+.profile .actual_tender .item{
+    overflow: hidden;
+    border-bottom: 1px solid #cdcdcd;
+}
+.profile .actual_tender .item:last-child{
+    border-bottom: 0;
+}
+.profile .actual_tender .item .block{
+    margin-left: 240px;
+}
+.profile .actual_tender .item img{
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+.profile .actual_tender .item .title{
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profile .actual_tender .item .dotted{
+    padding-bottom: 2px;
+    background: url(../images/dotted-black.png) left bottom repeat-x;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.profile .actual_tender .block_info{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.profile .actual_tender .block_info div{
+    float: left;
+    width: 33%;
+}
+.profile .actual_tender .block_info div span{
+    display: block;
+    color: #666;
+    font-size: 16px;
+}
+.profile .actual_tender .block_info div span:first-child{
+    font-size: 14px;
+    padding-left: 25px;
+    line-height: 20px;
+    margin-bottom: 2px;
+
+}
+.profile .actual_tender .block_info div:nth-child(1) span:first-child{
+    background: url(../images/tender_ico1.png) 1px center no-repeat;
+}
+.profile .actual_tender .block_info div:nth-child(2) span:first-child{
+    background: url(../images/tender_ico2.png) 1px center no-repeat;
+}
+.profile .actual_tender .block_info div:nth-child(3) span:first-child{
+    background: url(../images/tender_ico3.png) 1px center no-repeat;
+}
+.btn_blue{
+    background-color: #3bafda
+}
+.profile .actual_tender .btn_blue, .profile .actual_tender .btn_green{
+    width: 180px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 35px;
+    margin-top: 0;
+}
+.profile .pumb{
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+}
+.profile .what2{
+    float: right;
+    width: 300px;
+}
+.profile .what2 .title,
+.profile .pumb .balans{
+    line-height: 58px;
+    color: #666;
+    font-size: 24px;
+}
+.profile .what2 p{
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.profile .pumb .balans{
+    padding-left: 20px;
+}
+.profile .pumb .row label:first-of-type{
+    display: block;
+    color: #666;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.profile .pumb .row label+input{
+    background: url(../images/dotted-black.png) left bottom repeat-x;
+    outline: none;
+    font-size: 16px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 5px;
+    border: 0;
+    width: 130px;
+}
+.profile .pumb .row input+label{
+    color: #666;
+}
+.profile .pumb .row input:focus{
+    border-bottom: 1px solid #64dd16;
+    background-image: none;
+}
+.profile .pumb .btn_green{
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    font-weight: normal;
+    font-size: 14px;
+    width: 150px;
+    float: right;
+    margin: 0;
+}
+.profile .acordion{
+    padding: 20px 0px 30px 60px;
+}
+.profile .acordion .item{
+    overflow: hidden;
+}
+.profile .acordion .title{
+    font-size: 18px;
+    color: #363636;
+    background: url(../images/dotted-black.png) left bottom repeat-x, url(../images/tringl.png) right center no-repeat;
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;  
+}
+.profile .acordion .open .title{
+    background: url(../images/dotted-black.png) left bottom repeat-x, url(../images/tringl3.png) right center no-repeat;  
+}
+.profile .acordion .text{
+    color: #565656;
+    font-size: 18px;
+    margin: 0 20px;
+    height: 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: none;
+}
+.profile .acordion .open .text{
+    height: auto;
+    display: block;
+}
+.company_info table{
+    margin-left: 40px;
+    margin-top: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+.company_info table td{
+    height: 33px;
+    font-size: 16px;
+    color: #555;
+}
+.company_info table td:nth-child(1){
+    width: 115px;
+}
+.company_info table td:nth-child(2){
+    width: 165px;
+}
+.company_info table td:nth-child(3){
+    width: 125px;
+}
+.company_info table td:nth-child(4){
+    width: 175px;
+}
+.company_info .total_stars{
+    margin-bottom: 40px;
+}
+.company_info .total_stars .reviewStars input:checked ~ label, 
+.company_info .total_stars .reviewStars label{
+    background-image: url(../images/star_ico.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.company_info .total_stars .reviewStars label:hover, 
+.company_info .total_stars .reviewStars label:hover ~ label{
+    background-position: 0 -27px;
+}
+.company_info .total_stars .reviewStars{
+    width: 170px;
+    clear: none;
+}
+.company_info .total_stars .title{
+    font-size: 21px;
+    color: #333;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin-left: 40px;
+}
+.company_info .total_stars  p{
+    font-size: 16px;
+    color: #666;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.company_info fieldset{
+    margin-bottom: 20px;
 }

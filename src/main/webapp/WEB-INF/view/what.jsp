@@ -1,5 +1,12 @@
-<%@include file='header.jsp'%>
-	</header>
+﻿
+<!doctype html>
+<html>
+<head>
+    <%@include file="head.jsp"%>
+</head>
+<body>
+	<div class="overlay"></div>
+	<%@include file="header.jsp"%>
 	<section class="clear wrapper940 ">
 		<div class="pop_tenders">Как это работает</div>
 		<div class="what shadow_style clear">
@@ -12,4 +19,5 @@
 			</ul>
 		</div>
 	</section>
-<%@include file='footer.jsp'%>
+	<%@include file="footer.jsp"%>
+</body>

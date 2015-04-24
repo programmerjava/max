@@ -1,5 +1,12 @@
-<%@include file='header.jsp'%>
-	</header>
+﻿
+<!doctype html>
+<html>
+<head>
+    <%@include file="head.jsp"%>
+</head>
+<body>
+	<div class="overlay"></div>
+	<%@include file="header.jsp"%>
 	<section class="request">
 		<div class="pop_tenders">Заполните заявку</div>
 		<form class="wrapper790">
@@ -85,7 +92,7 @@
 		<div class="modal_text">
 			Наши специалисты в ближайшее время рассмотрят заявку<br>
 			и свяжутся с Вами для уточнения деталей.<br>
-			Узнать подробней как это работает <a href="index.php">здесь.</a>
+			Узнать подробней как это работает <a href="">здесь.</a>
 		</div>
 		<div class="next_step clear">
 			<div class="next_step_left">
@@ -98,6 +105,7 @@
 			</div>
 			<div class="or_box"></div>
 		</div>
-		<%@include file='pluso.jsp'%>
+		<%@include file="pluso.jsp"%>
 	</div>
-<%@include file='footer.jsp'%>
+	<%@include file="footer.jsp"%>
+</body>

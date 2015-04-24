@@ -28,7 +28,7 @@ public class Balance {
 	
 	
 	@OneToOne
-	private User cutomer;
+	private User user;
 	
 	
 	@Column(nullable = false)
@@ -49,7 +49,7 @@ public class Balance {
 	 * Получить пользователя, который является обладателем счета.
 	 */
 	public User getCutomer() {
-		return cutomer;
+		return user;
 	}
 
 
@@ -58,7 +58,7 @@ public class Balance {
 	 * Привязать пользователя, который является обладателем счета.
 	 */
 	public void setCutomer(User cutomer) {
-		this.cutomer = cutomer;
+		this.user = cutomer;
 	}
 
 

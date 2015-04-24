@@ -1,23 +1,8 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<script type="text/javascript" src="js/jquery2.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/tab.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script type="text/javascript" src="js/function.js"></script>
-</head>
-<body>
-	<div class="overlay"></div>
-	<header>
+﻿<header>
 		<div class="additional_block">
 			<div class="wrapper clear">
 				<div class="additional_text">Тендеры для всех</div>
-				<a href="what.php">Как тут все устроено</a>
+				<a href="#">Как тут все устроено</a>
 				<div class="additional_close"></div>
 			</div>
 		</div>
@@ -26,23 +11,23 @@
 				<div class="button_left_menu"></div>
 				<ul class="horizon_menu">
 					<li>
-						<a href="index.php"><img src="./images/Logo.png"></a>
+						<a href=""><img src="./images/Logo.png"></a>
 					</li>
-					<li><a href="tender.php">Тендеры</a></li>
+					<li><a href="#">Тендеры</a></li>
 					<li><a href="#">Правила</a></li>
 					<li><a href="#">Советы</a></li>
 					<li><a href="#">Пункт4</a></li>
 					<li><a href="#">Пункт5</a></li>
 				</ul>
 				<div class="login_block">
-					<a href="cabinet.php" class="login">вход</a>
+					<a href="#" class="login">вход</a>
 					<span></span>
-					<a href="reg.php">регистрация</a>
+					<a href="#">регистрация</a>
 				</div>
 				<div class="left_menu">
 					<nav class="nav_left">
 						<div>
-							<a href="index.php"><img src="./images/Logo.png"></a>
+							<a href="#"><img src="./images/Logo.png"></a>
 							<div></div>
 						</div>
 						<ul>
@@ -80,5 +65,4 @@
 				</div>
 			</div>
 		</nav>
-		</header>
-</body>
+	</header>

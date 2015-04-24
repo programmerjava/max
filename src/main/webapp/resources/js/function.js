@@ -237,7 +237,18 @@ $(document).ready(function(){
 		autoplay: true
 	});
 
-	initialize();
+	$('.acordion .title').click(function(){
+		var item = $(this).closest('.item').get(0);
+		$('.acordion .open').find('.text').slideUp(500, function(){
+			$('.acordion .open').removeClass('open');
+			$(item).find('.text').slideDown(500, function(){
+				$(item).addClass('open');
+			})
+		});
+		
+	})
+
+	if($('#map_canvas').get(0) != undefined) initialize();
 	function initialize() {  
 		var myLatlng = new google.maps.LatLng(55.755826, 37.6173);
 		var myOptions = {

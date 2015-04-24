@@ -28,6 +28,7 @@ public class InviteController {
 			@RequestParam("company") String company,
 			@RequestParam("purchaseId") Integer purchaseId, 
 			@RequestParam("title") String title) {
+		
 		Purchase purchase = new Purchase();
 		purchase.setId(purchaseId);
 		

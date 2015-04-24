@@ -1,5 +1,11 @@
-<%@include file='header.jsp'%>
-	</header>
+﻿<!doctype html>
+<html>
+<head>
+    <%@include file="head.jsp"%>
+</head>
+<body>
+	<div class="overlay"></div>
+	<%@include file="header.jsp"%>
 	<section class="wrapper790 registration">
 		<div class="pop_tenders">Регистрация поставщика</div>		
 		<div class="shadow_style clear">
@@ -123,4 +129,5 @@
 		</div>
 
 	</section>
-<%@include file='footer.jsp'%>
+	<%@include file="footer.jsp"%>
+</body>

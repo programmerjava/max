@@ -15,4 +15,6 @@ public interface CommentRepository
 	@Query("SELECT c FROM Comment c WHERE c.offer.id = :offerId")
 	public List<Comment> findAll(@Param("offerId") Integer offerId);
 
+	
+	
 }

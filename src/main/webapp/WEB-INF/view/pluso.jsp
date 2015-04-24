@@ -1,4 +1,4 @@
-<div>Рассказать об этом в социальных сетях</div>
+﻿<div>Рассказать об этом в социальных сетях</div>
 <script type="text/javascript">(function() {
 	if (window.pluso)if (typeof window.pluso.start == "function") return;
 	if (window.ifpluso==undefined) { window.ifpluso = 1;

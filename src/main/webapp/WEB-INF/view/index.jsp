@@ -1,60 +1,10 @@
-<%@include file='header.jsp'%>
-		<div class="picture_slider wrapper">
-			<div class="picture_length clear">
-				<div class="item">
-					<img src="./images/picture/banner1.jpg" alt="banner1">
-					<div class="info_block">
-						<div>Удобный способ найти Поставщика для тендера</div>
-						<p>
-							Здесь только лучшие<br>
-							исполнители, проверенные<br>
-							нами и зарекомендовавшие себя<br>
-							своей качественной работой,<br>
-							сданной точно в срок
-						</p>
-						<a href="#" class="info_button button_active1 shadow_style">Зарегистрировать тендер</a>
-					</div>
-				</div>
-				<div class="item"><img src="./images/picture/banner1.jpg" alt="banner1"></div>
-				<div class="item"><img src="./images/picture/banner1.jpg" alt="banner1"></div>
-				<div class="item"><img src="./images/picture/banner1.jpg" alt="banner1"></div>
-				<div class="item"><img src="./images/picture/banner1.jpg" alt="banner1"></div>
-			</div>
-			<div class="picture_nav">
-				<div class="pressed"></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		<div class="search_block wrapper790 clear">
-			<div class="service_type">Какую услугу искать</div>
-			<input type="search" class="shadow_style" placeholder="Например: спасение котят с деревьев">
-			<input type="submit" value="">
-			<div class="clearfix"></div>
-			<div class="search_category">Где искать</div>
-			<!--<input type="text" class="list_category" placeholder="Все категории">-->
-			<select id="list-search" class="search">
-				<option selected="">Все категории</option>
-				<option>Категория 1</option>
-				<option>- подкатегория 1.2</option>
-				<option>-- под-подкатегория 1.2.1</option>
-				<option>Категория 2</option>
-				<option>- подкатегория 2.2</option>
-				<option>-- под-подкатегория 2.2.1</option>
-				<option>Категория 3</option>
-				<option>- подкатегория 3.2</option>
-				<option>-- под-подкатегория 3.2.1</option>
-			</select>
-		</div>
-		<div class="not_found">
-			<div class="wrapper790 clear">
-				<div>Не нашли подходящий тендер?</div>
-				<a href="#">Напишите нам</a>
-			</div>
-		</div>
-	</header>
+﻿<html>
+<head>
+    <%@include file="head.jsp"%>
+</head>
+<body>
+	<div class="overlay"></div>
+	<%@include file="header_home.jsp"%>
 	<section class="section_pop_tenders wrapper">
 		<div class="pop_tenders">Популярные тендеры</div>
 		<div class="pop_tenders_block clear">
@@ -65,7 +15,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -77,20 +27,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
-					</div>
-				</div>
-				<img src="./images/picture/image1.jpg" alt="image1">
-			</div>
-			<div class="pop_tender shadow_style">
-				<div class="pop_tender_name">
-					Услуга или объект
-
-					<p>
-						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
-					</p>
-					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -103,7 +40,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -116,7 +53,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -129,7 +66,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -142,7 +79,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -155,7 +92,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -168,7 +105,20 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="new.php">Зарегистрировать тендер</a>
+						<a href="">Зарегистрировать тендер</a>
+					</div>
+				</div>
+				<img src="./images/picture/image1.jpg" alt="image1">
+			</div>
+			<div class="pop_tender shadow_style">
+				<div class="pop_tender_name">
+					Услуга или объект
+
+					<p>
+						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
+					</p>
+					<div class="btn">
+						<a href="">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -263,4 +213,5 @@
 			</p>
 		</div>
 	</section>
-<%@include file='footer.jsp'%>
+	<%@include file="footer.jsp"%>
+</body>

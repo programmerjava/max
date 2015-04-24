@@ -1,4 +1,4 @@
-	<footer>
+﻿<footer>
 		<div class="footer_top">
 			<div class="footer_top wrapper clear">
 				<ul>
@@ -42,4 +42,3 @@
 			</div>
 		</div>
 	</footer>
-</body>

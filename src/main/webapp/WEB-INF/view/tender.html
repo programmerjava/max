@@ -1,5 +1,87 @@
-<%@include file='header.jsp'%>
-	</header>
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<script type="text/javascript" src="js/jquery2.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+</head>
+<body>
+	<div class="overlay"></div>
+	<header>
+		<div class="additional_block">
+			<div class="wrapper clear">
+				<div class="additional_text">Тендеры для всех</div>
+				<a href="#">Как тут все устроено</a>
+				<div class="additional_close"></div>
+			</div>
+		</div>
+		<nav class="nav_top">
+			<div class="wrapper clear">
+				<div class="button_left_menu"></div>
+				<ul class="horizon_menu">
+					<li>
+						<a href=""><img src="./images/Logo.png"></a>
+					</li>
+					<li><a href="#">Тендеры</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Советы</a></li>
+					<li><a href="#">Пункт4</a></li>
+					<li><a href="#">Пункт5</a></li>
+				</ul>
+				<div class="login_block">
+					<a href="#" class="login">вход</a>
+					<span></span>
+					<a href="#">регистрация</a>
+				</div>
+				<div class="left_menu">
+					<nav class="nav_left">
+						<div>
+							<a href="#"><img src="./images/Logo.png"></a>
+							<div></div>
+						</div>
+						<ul>
+							<li class="li_first">Сервис</li>
+							<li><a href="#">Пункт бокового меню 1</a></li>
+							<li><a href="#">Пункт бокового меню 2</a></li>
+							<li><a href="#">Пункт бокового меню 3</a></li>
+							<li><a href="#">Пункт бокового меню 4</a></li>
+						</ul>
+						<ul>
+							<li class="li_first">Компания</li>
+							<li><a href="#">Пункт бокового меню 1</a></li>
+							<li><a href="#">Пункт бокового меню 2</a></li>
+							<li><a href="#">Пункт бокового меню 3</a></li>
+						</ul>
+						<ul>
+							<li class="li_first">Служба поддержки</li>
+							<li><a href="#">Пункт бокового меню 1</a></li>
+							<li><a href="#">Пункт бокового меню 2</a></li>
+							<li><a href="#">Пункт бокового меню 3</a></li>
+						</ul>
+						<ul class="footer_ul_last">
+							<li class="li_tel">8 800 100 22 22</li>
+							<li class="li_time">Время работы офиса: пн-пт 10:00 - 19:00</li>
+							<li class="li_address">Адрес: Москва, Кремль</li>
+						</ul>
+						<div class="soc_box">
+							<a href="#" class="vk"></a>
+							<a href="#" class="fb"></a>
+							<a href="#" class="tw"></a>
+							<a href="#" class="gp"></a>
+							<a href="#" class="ok"></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</nav>
+			</header>
 	<section class="tenders wrapper940 clear">
 		<div class="pop_tenders">Ваш тендер</div>
 		<div class="card_tender shadow_style clear">
@@ -534,8 +616,18 @@
 			<div>хорошо</div>
 		</div>
 		<a href="#" class="info_button button_active1 shadow_style">Перейти</a>
-		<?php include('pluso.php'); ?>
-	</form>
+		<div>Рассказать об этом в социальных сетях</div>
+<script type="text/javascript">(function() {
+	if (window.pluso)if (typeof window.pluso.start == "function") return;
+	if (window.ifpluso==undefined) { window.ifpluso = 1;
+	var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+	s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+	s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+	var h=d[g]('body')[0];
+	h.appendChild(s);
+	}})();
+</script>
+<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=08" data-services="vkontakte,facebook,twitter,google,odnoklassniki"></div>	</form>
 	<div id="notMoney" class="modal_box_big modal_money modal">
 		<div class="modal_close"></div>
 		<div class="modal_title">На вашем счете<br>недостаточно средств</div>
@@ -556,6 +648,60 @@
 			Перейти на страницу поставщика<br>для связи
 		</div>
 		<a href="#" class="info_button button_active1 shadow_style">Перейти</a>
-		<%@include file='pluso.jsp'%>
-	</div>
-<%@include file='footer.jsp'%>
+		<div>Рассказать об этом в социальных сетях</div>
+<script type="text/javascript">(function() {
+	if (window.pluso)if (typeof window.pluso.start == "function") return;
+	if (window.ifpluso==undefined) { window.ifpluso = 1;
+	var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+	s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+	s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+	var h=d[g]('body')[0];
+	h.appendChild(s);
+	}})();
+</script>
+<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=08" data-services="vkontakte,facebook,twitter,google,odnoklassniki"></div>	</div>
+	<footer>
+		<div class="footer_top">
+			<div class="footer_top wrapper clear">
+				<ul>
+					<li class="li_first">Как тут все устроено</li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+				<ul>
+					<li class="li_first">Компания</li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+				<ul>
+					<li class="li_first">Служба поддержки</li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+				<ul class="footer_ul_last">
+					<li class="li_tel">8 800 100 22 22</li>
+					<li class="li_time">Время работы офиса: пн-пт 10:00 - 19:00</li>
+					<li class="li_address">Адрес: Москва, Кремль</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="wrapper clear">
+				<div class="copyright">&copy;2015 Tender</div>
+				<div class="soc_box">
+					<a href="#" class="vk"></a>
+					<a href="#" class="fb"></a>
+					<a href="#" class="tw"></a>
+					<a href="#" class="gp"></a>
+					<a href="#" class="ok"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>

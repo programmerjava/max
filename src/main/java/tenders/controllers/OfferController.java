@@ -25,7 +25,7 @@ public class OfferController {
 	@ResponseStatus(HttpStatus.OK)
 	public void add() {
 		
-		
+		throw new UnsupportedOperationException();
 		
 	}
 	
