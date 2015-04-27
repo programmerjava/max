@@ -1,0 +1,291 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<script type="text/javascript" src="js/jquery2.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+</head>
+<body>
+	<div class="overlay"></div>
+	<header>
+		<div class="additional_block">
+			<div class="wrapper clear">
+				<div class="additional_text">Тендеры для всех</div>
+				<a href="#">Как тут все устроено</a>
+				<div class="additional_close"></div>
+			</div>
+		</div>
+		<nav class="nav_top">
+			<div class="wrapper clear">
+				<div class="button_left_menu"></div>
+				<ul class="horizon_menu">
+					<li>
+						<a href=""><img src="./images/Logo.png"></a>
+					</li>
+					<li><a href="#">Тендеры</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Советы</a></li>
+					<li><a href="#">Пункт4</a></li>
+					<li><a href="#">Пункт5</a></li>
+				</ul>
+				<div class="login_block">
+					<a href="#" class="login">вход</a>
+					<span></span>
+					<a href="#">регистрация</a>
+				</div>
+				<div class="left_menu">
+					<nav class="nav_left">
+						<div>
+							<a href="#"><img src="./images/Logo.png"></a>
+							<div></div>
+						</div>
+						<ul>
+							<li class="li_first">Сервис</li>
+							<li><a href="#">Пункт бокового меню 1</a></li>
+							<li><a href="#">Пункт бокового меню 2</a></li>
+							<li><a href="#">Пункт бокового меню 3</a></li>
+							<li><a href="#">Пункт бокового меню 4</a></li>
+						</ul>
+						<ul>
+							<li class="li_first">Компания</li>
+							<li><a href="#">Пункт бокового меню 1</a></li>
+							<li><a href="#">Пункт бокового меню 2</a></li>
+							<li><a href="#">Пункт бокового меню 3</a></li>
+						</ul>
+						<ul>
+							<li class="li_first">Служба поддержки</li>
+							<li><a href="#">Пункт бокового меню 1</a></li>
+							<li><a href="#">Пункт бокового меню 2</a></li>
+							<li><a href="#">Пункт бокового меню 3</a></li>
+						</ul>
+						<ul class="footer_ul_last">
+							<li class="li_tel">8 800 100 22 22</li>
+							<li class="li_time">Время работы офиса: пн-пт 10:00 - 19:00</li>
+							<li class="li_address">Адрес: Москва, Кремль</li>
+						</ul>
+						<div class="soc_box">
+							<a href="#" class="vk"></a>
+							<a href="#" class="fb"></a>
+							<a href="#" class="tw"></a>
+							<a href="#" class="gp"></a>
+							<a href="#" class="ok"></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</nav>
+			</header>
+	<div class="wrapper">
+		<div class="pop_tenders">Личный кабинет</div>
+		<aside>
+			<ul class="shadow_style">
+				<li>
+					<a href="">Мои тендеры (5)</a>
+					<ul>
+						<li><a href="">Актуальные (3)</a></li>
+						<li><a href="">Завершенные (2)</a></li>
+						<li class="disabl"><a href="">Неудачные (0)</a></li>
+					</ul>
+				</li>
+				<li class="select"><a href="">Настройки</a></li>
+				<li><a href="">Счет</a></li>
+			</ul>
+		</aside>
+		<section class="right clear profile">
+			<fieldset class="shadow_style">
+				<h2>Личная информация</h2>
+				<div class="profile_block">
+					<div class="left_profile">
+						<ul class="info_profile">
+							<li>Название компании: ООО «Рога и копыта»</li>
+							<li>Контактное лицо: Иванов Петр Сергеевич</li>
+							<li>ОГРН: 99 99 99 99 99 991 <a href="" class="upload">свидетельство</a></li>
+							<li>ИНН: 99 99 99 99 91</li>
+						</ul>
+						<ul class="contact_profile">
+							<li><span>Телефон:</span><span>+7 (495) 555 55 55</span></li>
+							<li><span>Почта: </span><span>ivanov.petr@mail.ru</span></li>
+							<li><a href="" class="edit">редактировать</a></li>
+						</ul>
+					</div>
+					<div class="right_profile">
+						<div class="title">Логотип компании</div>
+						<img src="images/avatar.png">
+						<a href="" class="upload">загрузить</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="password">
+					<div class="title">Изменить пароль для входа</div>
+					<div class="row">
+						<label>Старый пароль:</label>
+						<input type="password">
+					</div>
+					<div class="row new">
+						<label>Новый пароль: </label>
+						<input type="password">
+					</div>
+					<input type="submit" class="button_active1 shadow_style btn-green" value="Сохранить">
+				</div>
+				<div class="category">
+					<div class="title">Выбрать категорию участия</div>
+					<div class="row">
+						<select class="search">
+							<option>Категория 1</option>
+							<option selected="">подкатегория 1.2</option>
+							<option>- подкатегория 1.2</option>
+							<option>-- под-подкатегория 1.2.1</option>
+							<option>Категория 2</option>
+							<option>- подкатегория 2.2</option>
+							<option>-- под-подкатегория 2.2.1</option>
+							<option>Категория 3</option>
+							<option>- подкатегория 3.2</option>
+							<option>-- под-подкатегория 3.2.1</option>
+						</select>
+					</div>
+					<div class="row">
+						<a class="add_category" href="#">добавить категорию</a>
+					</div>
+				</div>
+			</fieldset>
+			<div class="clear"></div>
+			<br><br>
+			<fieldset class="shadow_style">
+				<h2 class="text_gray">Галерея работ</h2>
+				<div class="gallery">
+					<div class="item">
+						<img src="./images/picture/img.png" alt="image1">
+						<div>
+							<div class="title">Название работы</div>
+							<div class="anons">Это было сложно, но мы это сделали...</div>
+							<a class="btn-link">Подробнее</a>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/picture/img.png" alt="image1">
+						<div>
+							<div class="title">Название работы</div>
+							<div class="anons">Это было сложно, но мы это сделали...</div>
+							<a class="btn-link">Подробнее</a>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/picture/img.png" alt="image1">
+						<div>
+							<div class="title">Название работы</div>
+							<div class="anons">Это было сложно, но мы это сделали...</div>
+							<a class="btn-link">Подробнее</a>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/picture/img.png" alt="image1">
+						<div>
+							<div class="title">Название работы</div>
+							<div class="anons">Это было сложно, но мы это сделали...</div>
+							<a class="btn-link">Подробнее</a>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/picture/img.png" alt="image1">
+						<div>
+							<div class="title">Название работы</div>
+							<div class="anons">Это было сложно, но мы это сделали...</div>
+							<a class="btn-link">Подробнее</a>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/picture/img.png" alt="image1">
+						<div>
+							<div class="title">Название работы</div>
+							<div class="anons">Это было сложно, но мы это сделали...</div>
+							<a class="btn-link">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="title_gray">Добавить новую работу</div>
+				<div class="add_work">
+					<div class="left_block">
+						<div class="row">
+							<label>Название:</label>
+							<input type="text" class="text_gray">
+						</div>
+						<div class="row green">
+							<label>Описание:</label>
+							<input type="text">
+						</div>
+					</div>
+					<div class="right_block">
+						<img src="images/picture/img2.png">
+						<a href="" class="upload">загрузить</a>
+						<input type="submit" class="button_active1 shadow_style btn-green" value="Добавить">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</fieldset>
+			<br><br>
+			<fieldset class="shadow_style setting_message">
+				<h2 class="text_gray">Настройки уведомлений</h2>
+				<div class="checked">
+					<input id="check1" type="checkbox">
+					<label for="check1" class="text_gray">Уведомлять меня о сообщениях заказчиков</label>
+				</div>
+				<div class="checked">
+					<input id="check2" type="checkbox">
+					<label for="check2" class="text_gray">Уведомлять меня о снижении цен</label>
+				</div>
+			</fieldset>
+		</section>
+		<div class="clear"></div>
+	</div>
+	<footer>
+		<div class="footer_top">
+			<div class="footer_top wrapper clear">
+				<ul>
+					<li class="li_first">Как тут все устроено</li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+				<ul>
+					<li class="li_first">Компания</li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+				<ul>
+					<li class="li_first">Служба поддержки</li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+					<li><a href="#">Пункт меню</a></li>
+				</ul>
+				<ul class="footer_ul_last">
+					<li class="li_tel">8 800 100 22 22</li>
+					<li class="li_time">Время работы офиса: пн-пт 10:00 - 19:00</li>
+					<li class="li_address">Адрес: Москва, Кремль</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="wrapper clear">
+				<div class="copyright">&copy;2015 Tender</div>
+				<div class="soc_box">
+					<a href="#" class="vk"></a>
+					<a href="#" class="fb"></a>
+					<a href="#" class="tw"></a>
+					<a href="#" class="gp"></a>
+					<a href="#" class="ok"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>

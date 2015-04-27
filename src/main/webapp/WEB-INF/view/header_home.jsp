@@ -2,7 +2,7 @@
 		<div class="additional_block">
 			<div class="wrapper clear">
 				<div class="additional_text">Тендеры для всех</div>
-				<a href="./info">Как тут все устроено</a>
+				<a href="">Как тут все устроено</a>
 				<div class="additional_close"></div>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 				<div class="login_block">
 					<a href="" class="login">вход</a>
 					<span></span>
-					<a href="./provider_registration">регистрация</a>
+					<a href="">регистрация</a>
 				</div>
 				<div class="left_menu">
 					<nav class="nav_left">

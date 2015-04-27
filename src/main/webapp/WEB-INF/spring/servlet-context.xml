@@ -29,15 +29,8 @@
 	</beans:bean>
 
 	<view-controller path="/" view-name="index" />
-	<view-controller path="/add_tender" view-name="tender_registration"/>
-	<view-controller path="/provider_registration" view-name="provider_registration"/>
-	<view-controller path="/info" view-name="what"/>
-	
-	<view-controller path="/back/" view-name="/back/main"/>
-	<view-controller path="/back/accept_tenders" view-name="/back/accept_tenders"/>
-	<view-controller path="/back/consumers" view-name="/back/consumers"/>
-	<view-controller path="/back/debts" view-name="/back/debt"/>
-	<view-controller path="/back/providers" view-name="/back/providers"/>
+
+
 
 	<!-- Configure to plugin JSON as request and response in method handler -->
 	<beans:bean
