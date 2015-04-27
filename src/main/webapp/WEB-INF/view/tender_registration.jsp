@@ -9,7 +9,7 @@
 	<%@include file="header.jsp"%>
 	<section class="request">
 		<div class="pop_tenders">Заполните заявку</div>
-		<form class="wrapper790">
+		<form class="wrapper790" method="POST" action="submit_tender">
 			<div class="search_category">Укажите раздел:</div>
 			<select id="list-search" class="search">
 				<option selected="">Все категории</option>
