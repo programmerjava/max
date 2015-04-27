@@ -22,7 +22,7 @@
 				<div class="login_block">
 					<a href="#" class="login">вход</a>
 					<span></span>
-					<a href="#">регистрация</a>
+					<a href="./users/register_provider">регистрация</a>
 				</div>
 				<div class="left_menu">
 					<nav class="nav_left">

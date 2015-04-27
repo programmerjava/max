@@ -15,7 +15,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -27,20 +27,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
-					</div>
-				</div>
-				<img src="./images/picture/image1.jpg" alt="image1">
-			</div>
-			<div class="pop_tender shadow_style">
-				<div class="pop_tender_name">
-					Услуга или объект
-
-					<p>
-						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
-					</p>
-					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="/add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -53,7 +40,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -66,7 +53,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -79,7 +66,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -92,7 +79,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -105,7 +92,7 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -118,7 +105,20 @@
 						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
 					</p>
 					<div class="btn">
-						<a href="">Зарегистрировать тендер</a>
+						<a href="./add_tender">Зарегистрировать тендер</a>
+					</div>
+				</div>
+				<img src="./images/picture/image1.jpg" alt="image1">
+			</div>
+			<div class="pop_tender shadow_style">
+				<div class="pop_tender_name">
+					Услуга или объект
+
+					<p>
+						Краткое описание услуги или объекта, в виде анонса, занимающее не более 3х строк
+					</p>
+					<div class="btn">
+						<a href="./add_tender">Зарегистрировать тендер</a>
 					</div>
 				</div>
 				<img src="./images/picture/image1.jpg" alt="image1">
@@ -145,7 +145,7 @@
 					<div class="tender_client"><span>заказчик</span>
 						Иванов Иван Иванович
 					</div>
-					<a href="#" class="button_active1 shadow_style">Хочу такой же тендер</a>
+					<a href="./add_tender" class="button_active1 shadow_style">Хочу такой же тендер</a>
 				</div>
 			</div>
 		</div>
